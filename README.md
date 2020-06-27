@@ -2,7 +2,7 @@
 
 基于[Nest](https://github.com/nestjs/nest) 的原型工程
 
-#### 前置知识：
+### 前置知识
 
 Nodejs、Typescript、Express、Mongodb
 
@@ -11,8 +11,14 @@ Nodejs、Typescript、Express、Mongodb
 ### 环境要求
 
 1. Node.js
+
 2. mongodb
-3. Nest cli
+
+3.  Nest CLI
+
+   ```bash
+   npm i -g @nestjs/cli
+   ```
 
 ## 安装依赖
 
@@ -189,10 +195,14 @@ export const RATELIMIT_CONFIG = {
 
 以上配置的意思是同一个IP下，15分钟内最大只能访问1000次该程序
 
-## 链接地址
+## 资源
 
 官网：https://nestjs.com/
 
 中文网站：https://docs.nestjs.cn/
 
 GitHub:https://github.com/nestjs/nest
+
+----
+
+如果大家在使用过程中有什么意见及问题，请及时反馈
