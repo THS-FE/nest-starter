@@ -45,7 +45,7 @@ $ npm run start:prod
 
 ## 项目主要模块介绍
 
-![image-20200627161943548](D:\workproject\nestjs\nest-starter\README.assets\image-20200627161943548.png)
+![image-20200627161943548](https://github.com/THS-FE/nest-starter/blob/master/README.assets/20200627161943548.png)
 
 1. News模块：为示例模块，存在一些示例用法，比如基本的get post请求、第三方服务器资源请求等
 2. Auth模块：为认证模块，如果需要接口认证，其他业务模块需要引入该模块加以配置，并配合该模块的登录接口进行认证操作
