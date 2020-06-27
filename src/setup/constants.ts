@@ -33,14 +33,14 @@ export const SWAGGER_CONFIG = {
 // 日志 相关参数配置
 export const LOGGER_CONFIG = {
     LOG_DIRECTORY: '../../log', // 日志输出目录
-    IS_OUTPUTFILE: false, // 日志是否保存文件中，如果设置成false,只控制台输出
+    IS_OUTPUTFILE: true, // 日志是否保存文件中，如果设置成false,只控制台输出
     FORMAT: 'combined', // 日志输出格式 比如combined、short等，默认是default
 };
 
 // 文件上传相关
 export const UPLOAD_FILE = {
     RELATIVE_PATH: '../../upload', // 文件上传目录
-    REAL_PATH: '', // 实际目录
+    REAL_PATH: '', // 实际目录，无需设置，会根据RELATIVE_PATH生成绝对路径，这里是为了其他功能获取
     IS_CREATE_THUMP: true, // 如果是图片，是否生成缩略图
     THUMP_CONFIG: [{ w: 100, h: 100, quality: 80 }, { w: 256, h: 256, quality: 80 }, { w: 50, quality: 80 }], // 如果是图片，生成缩略图多个的参数
 };
