@@ -90,3 +90,4 @@ lerna-debug.log*
 .svn/pristine/fb/fbd0ec04fcfa95cb49db8903ac54ce6cc7e6bd4c.svn-base
 .svn/wc.db
 .svn/wc.db-journal
+package-lock.json
