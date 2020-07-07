@@ -7,7 +7,7 @@ import { APP_CONFIG } from './setup/constants';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { ValidationPipe } from '@nestjs/common';
 import { HttpExceptionFilter } from './filters/http-exception.filter';
-import { TransformInterceptor } from './interceptor/transform.interceptor';
+import { TransformInterceptor } from './interceptors/transform.interceptor';
 import { join } from 'path';
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule, {});

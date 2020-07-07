@@ -79,6 +79,8 @@ $ npm run start:prod
 
 ![image-20200627161943548](https://github.com/THS-FE/nest-starter/blob/master/README.assets/20200627161943548.png)
 
+**想要看此图，必须学会翻墙**
+
 ## 项目配置说明
 
 ### 应用访问相关配置
