@@ -17,7 +17,7 @@ export class HttpClientService {
      */
     get<T>(url: string, param?: any): Promise<T> {
         url = `${url}${this.getHttpParams(param)}`;
-        return this.httpService.get(url).pipe(map(response => response.data)).toPromise();
+        return this.httpService.get(url).pipe(map((response: AxiosResponse<T>) => response.data)).toPromise();
     }
 
     /**
@@ -26,7 +26,7 @@ export class HttpClientService {
      * @param param  请求参数 格式 {x:1,y:2}
      */
     post<T>(url: string, param?: any): Promise<T> {
-        return this.httpService.post(url, param).pipe(map(response => response.data)).toPromise();
+        return this.httpService.post(url, param).pipe(map((response: AxiosResponse<T>) => response.data)).toPromise();
     }
 
     /**
