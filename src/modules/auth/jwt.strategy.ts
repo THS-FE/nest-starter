@@ -2,6 +2,7 @@ import { ExtractJwt, Strategy } from 'passport-jwt';
 import { AuthService } from './auth.service';
 import { PassportStrategy } from '@nestjs/passport';
 import { Injectable, UnauthorizedException } from '@nestjs/common';
+import { AUTH } from 'src/setup/constants';
 /**
  * JWt策略类，由于继承了PassportStrategy，当验证token 时，会自动进入此方法validate
  */
@@ -10,7 +11,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     constructor(private readonly authService: AuthService) {
         super({
             jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-            secretOrKey: 'secretKey',
+            secretOrKey: AUTH.SECRET,
         });
     }
     /**

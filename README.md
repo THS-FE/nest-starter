@@ -47,7 +47,6 @@ $ npm run start:prod
 
 ### 目录结构
 
-```
 ├─dist 生产模式下，生成的发布文件存放目录
 ├─log  当前配置下，系统运行日志存放目录
 ├─public 当前配置下，静态网站资源存放目录
@@ -68,18 +67,15 @@ $ npm run start:prod
 │  │  └─news 示例模块，存在一些示例用法，比如基本的get post请求、第三方服务器资源请求等
 │  │      └─dtos 数据传输对象存放目录，接口参数验证及在线接口文档定义需要在此完成
 │  ├─pipes 管道，实现转换、验证操作，比如请求参数类型的转换
-│  ├─schemas 数据库集合结构定义
-│  └─setup 项目配置相关，详细参照项目配置说明章节
-├─test 端对端测试，测试用例
-├─upload 当前配置下，文件上传存放目录
-└─views 当前配置下，模板引擎存放目录，本项目内置ejs模板引擎
-```
+│  ├─schemas
+│  └─setup
+├─test
+├─upload
+└─views
 
 ### 项目架构
 
 ![image-20200627161943548](https://github.com/THS-FE/nest-starter/blob/master/README.assets/20200627161943548.png)
-
-**想要看此图，必须学会翻墙**
 
 ## 项目配置说明
 
