@@ -46,6 +46,7 @@ $ npm run start:prod
 ## 项目介绍
 
 ### 目录结构
+```
 
 ├─dist 生产模式下，生成的发布文件存放目录
 ├─log  当前配置下，系统运行日志存放目录
@@ -72,7 +73,7 @@ $ npm run start:prod
 ├─test
 ├─upload
 └─views
-
+```
 ### 项目架构
 
 ![image-20200627161943548](https://github.com/THS-FE/nest-starter/blob/master/README.assets/20200627161943548.png)
